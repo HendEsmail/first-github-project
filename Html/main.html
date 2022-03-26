@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <video src="../Res/big_buck_bunny.mp4" id="v" height="300px"></video>
+    <br>&nbsp;&nbsp;
+    <label id="l"></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="l1"></span><br>
+    <input onchange="changeVBar()" id="videoBar" value="0" type="range" min="0" max="60" step="1" style="width: 505px;"></input>
+    &nbsp;&nbsp;
+    <br>
+    <button style="background: none; border: none;" value="Play" id="playB" onclick="playV()"> <i id="i1" class="fa fa-play"></i></button>
+    <button style="background: none; border: none;" value="Stop" id="stopB" onclick="stopV()"><i  class="fa fa-stop-circle" style="font-size: medium;"></i></button>
+    <button style="background: none; border: none;"  id="back20B" onclick="back20V()"><i  class="fa fa-fast-backward" style="font-size: medium;"></i></button>
+    <button style="background: none; border: none;" value="<" id="back5B" onclick="back5V()"><i  class="fa fa-backward" style="font-size: medium;"></i></button>
+    <button style="background: none; border: none;" value=">" id="fw5B" onclick="fw5V()"><i  class="fa fa-forward" style="font-size: medium;"></i></button>
+    <button style="background: none; border: none;" value=">>" id="fw20B" onclick="fw20V()"><i  class="fa fa-fast-forward" style="font-size: medium;"></i></button>
+    
+    <!-- <meter id="mtS" min="0" max="10" value="5" low="2" high="8"></meter> -->
+    <input value="0.5" onchange="changeVolBar()" id="vol-control" type="range" min="0" max="1" step="0.1"></input>
+    
+    <button style="background: none; border: none;" type="button" id="muteB" onclick="muteV()"><i id="i" class="fa fa-volume-up"></i></button>
+    <button style="background: none; border: none;" onclick="openFullscreen()"  value="Full Screen"><i class="fa fa-arrows-alt" style="font-size: medium;"></i></button>
+    
+    <label> Speed &nbsp;&nbsp;</label>
+    <input onchange="changeSpdBar()" id="spdBar" type="range" value="1" min="1" max="16" step="1"></input>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
